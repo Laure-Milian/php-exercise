@@ -15,6 +15,7 @@
 	function Describe($genre, $age) {
 
 		$genre_low = strtolower($genre);
+		
 		if($genre_low === "homme" && $age >= 18) {
 			return 'Vous êtes un homme et vous êtes majeur';
 		}
