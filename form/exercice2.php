@@ -5,7 +5,7 @@
 	<title>Form</title>
 </head>
 <body>
-	<form action="/user.php" method="post">
+	<form action="/exercice4.php" method="post">
 		<div>
 			<label for="nom">Nom :</label>
 		</div>
