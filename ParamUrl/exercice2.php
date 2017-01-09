@@ -1,7 +1,7 @@
 <?php
 
-if ($_GET['age']) {
-	echo "age existe";
+if (isset($_GET['age'])) {
+	echo $_GET['age'];
 } else {
-	echo "age n'existe pas";
+	echo "Le paramètre age n'existe pas";
 }
