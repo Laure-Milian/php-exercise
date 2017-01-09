@@ -2,3 +2,9 @@
 <p>
 En allant de 1 à 100 avec un pas de 15, afficher le message On tient le bon bout.
 </p>
+<?php
+$len = 100;
+	for ($i = 1; $i <= $len ; $i++) {
+		echo '<div>' . $i . ' On tient le bon bout. </div>';
+	}
+?>
