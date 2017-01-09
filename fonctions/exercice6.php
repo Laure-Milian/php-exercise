@@ -1,0 +1,2 @@
+<h1>Fonctions - Exercice 6</h1>
+<p>Faire une fonction qui prend trois paramètres : nom, prenom et age. Elle doit renvoyer une chaine de la forme : "Bonjour" + nom + prenom + ",tu as" + age + "ans".</p>
