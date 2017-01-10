@@ -10,3 +10,8 @@
 h1 {
 	color: red;
 }
+
+td {
+	width: 20px;
+	border: 1px solid black;
+}
