@@ -26,6 +26,9 @@
 					<option value="2017">2017</option>
 				</select>
 			</div>
+			<div>
+				<input type="submit" value="Créer le calendrier">
+			</div>
 		</form>
 	</div>
 	
