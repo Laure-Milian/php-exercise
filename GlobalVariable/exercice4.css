@@ -1,0 +1,13 @@
+* {
+	font-family: 'Arial', Open Sans;
+	font-size: 18px;
+}
+
+.container {
+	margin-top: 5em;
+	text-align: center;
+}
+
+h2 {
+	font-size: 1.2em;
+}
