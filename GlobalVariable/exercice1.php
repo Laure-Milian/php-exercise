@@ -26,7 +26,6 @@
 			<h2>Nom du serveur :</h2>
 			<span><?= $Server_name ?></span>
 		</div>
-		
 	</div>
 	
 </body>
