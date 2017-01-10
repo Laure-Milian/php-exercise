@@ -1,0 +1,22 @@
+* {
+	font-family: 'Arial', Open Sans;
+	font-size: 18px;
+}
+
+.container {
+	width: 15%;
+	margin : 5em auto;
+}
+
+h2 {
+	font-size: 1.2em;
+	color: teal;
+}
+
+h3 {
+	color: grey;
+}
+
+.divForm {
+	margin-top: 2em;
+}
