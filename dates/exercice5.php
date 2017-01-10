@@ -1,6 +1,6 @@
 <?php
 	$currentTimestamp = time();
-	$mardiTimestamp = strtotime('02-08-2016')+15*60*60;
+	$mardiTimestamp = strtotime('16-05-2016')+15*60*60;
 	$numDays = floor(abs($mardiTimestamp - $currentTimestamp)/60/60/24);
 
 	echo $numDays;
