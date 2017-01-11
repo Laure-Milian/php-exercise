@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Calendrier</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.6/semantic.min.css">
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -10,10 +11,10 @@
 	<div class="container">
 
 		<form action="/">
-			<div>
+			<div class="ligne_form">
 				<label for="month">Sélectionner le mois : </label>
 			</div>
-			<div>
+			<div class="ligne_form">
 				<select name="month" method="get" id="month">
 					<option value="1">Janvier</option>
 					<option value="2">Février</option>
@@ -29,10 +30,10 @@
 					<option value="12">Décembre</option>
 				</select>
 			</div>
-			<div>
+			<div class="ligne_form">
 				<label for="year">Sélectionner l'année : </label>
 			</div>
-			<div>
+			<div class="ligne_form">
 				<select name="year" id="year">
 					<option value="2017">2017</option>
 					<option value="2016">2016</option>
@@ -40,12 +41,12 @@
 					<option value="2014">2014</option>
 					<option value="2013">2013</option>
 					<option value="2012">2012</option>
-					<option value="2013">2011</option>
-					<option value="2012">2010</option>				
+					<option value="2011">2011</option>
+					<option value="2010">2010</option>				
 				</select>
 			</div>
-			<div>
-				<input type="submit" value="Créer le calendrier">
+			<div class="ligne_form">
+				<input class="ui violet button" type="submit" value="Créer le calendrier">
 			</div>
 		</form>
 		
@@ -57,20 +58,17 @@
 
 			//Définir le nombre de jours dans le mois
 			$days_num = cal_days_in_month(CAL_GREGORIAN, $month, $year);
-			echo $days_num;
 
-			// Définir quel est le premier jour (lundi, mardi...)
+			// Définir quel est le premier jour (lundi, mardi...) et donc la première cellule du tableau
 			$firstdayTimestamp = strtotime('01-' . $month . '-' . $year);
 			$first_day = date("N", $firstdayTimestamp);
 			$first_td = $first_day - 1;
 
-			// Tableau mois
+			// Tableau mois pour affichage du titre
 			$arr_month = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre", "novembre", "décembre"];
 			$index = $month - 1;
 			$month_str = $arr_month[$index];
-
 		?>
-
 
 		<h1><?= $month_str . " " . $year ?></h1>
 		<table>
@@ -86,7 +84,6 @@
 			<tr>
 			<?php 
 				$len = $days_num + $first_td;
-				echo $len;
 				$value = 1;
 				for ($i = 0 ; $i < $len ; $i++) {
 					if ($i < $first_td) {

@@ -3,15 +3,21 @@
 }
 
 .container {
-	text-align: center;
-	margin-top: 100px;
+	width: 50%;
+	margin: 1em auto;
 }
 
 h1 {
-	color: red;
+	color: violet;
 }
 
 td {
-	width: 20px;
+	width: 5em;
+	height: 5em;
 	border: 1px solid black;
+	text-align: center;
+}
+
+.ligne_form {
+	margin-top: 1em;
 }
